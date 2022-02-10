@@ -1,13 +1,12 @@
 const User = require('./User');
-const Collections = require('./Collections.js');
+const Comics = require('./Comics.js');
 
-User.hasMany(Collections, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+User.belongsToMany(Comics, {
+  through : 'User_Comics'
 });
 
-Collections.belongsTo(User, {
-  foreignKey: 'user_id'
+Comics.belongsToMany(User, {
+  through : 'User_Comics'
 });
 
-module.exports = { User, Collections };
+module.exports = { User, Comics };
