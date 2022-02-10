@@ -1,0 +1,19 @@
+{
+  "name": "comicstans",
+  "version": "1.0.0",
+  "description": "This is a forum like website that allows you to share and rate other peoples DC Comic collections",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pr1me-e1gh7/ComicStans.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pr1me-e1gh7/ComicStans/issues"
+  },
+  "homepage": "https://github.com/pr1me-e1gh7/ComicStans#readme"
+}
