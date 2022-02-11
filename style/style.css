@@ -1,0 +1,147 @@
+/* Page Elements */
+:root {
+    --navbarBkgd: white;
+    --navbarText: #4361ee;
+    --pageBkgd: white;
+    --pageText: #3a0ca3;
+}
+body {
+    background-color: black;
+    color: var(--pageText);
+    font-family: 'Bangers', cursive;
+    font-size: 150%;
+    list-style-type: none;
+    opacity: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Footer */
+.custom-footer {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.custom-footer a {
+    color: white;
+    text-decoration: none;
+}
+.custom-footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+.custom-iconfooter:hover {
+    -webkit-animation: infinite-spinning 1s ease-out 0s infinite normal;
+    animation: infinite-spinning 1s ease-out 0s infinite normal;
+}
+@keyframes infinite-spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/* Homepage Images */
+.bkgdimg {
+    opacity: 30%;
+    z-index: -2;
+    background-image: url("https://cdn.shopify.com/s/files/1/1140/8354/articles/Who_Owns_DC_Comics_2000x.jpg?v=1635267203");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+}
+#mascot_danc {
+    position: absolute;
+    bottom: 0px;
+    height: 40%;
+    width: auto;
+    z-index: -1;
+}
+
+/* Homepage Buttons */
+#homepage_collbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    list-style-type: none;
+}
+.custom-homepgbtn {
+    border: white 20px solid;
+    background: none;
+    border-radius: 100%;
+    height: 500px;
+    margin: 20px;
+    margin-top: 30%;
+    top: 50%;
+    width: 500px;
+}
+.custom-homepgbtn a {
+    color: white;
+    text-decoration: none;
+}
+.custom-homepgbtn a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.custom-iconhome {
+    font-size: 200px;
+}
+/* Nav Elements */
+#dccomicslogo {
+    height: 50px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: auto;
+}
+.navbar {
+    font-family: 'Bangers', cursive;
+    justify-content: flex-end;
+    background-color: var(--navbarBkgd);
+}
+nav a {
+    color: var(--navbarText);
+}
+#navloglink:hover {
+    color: var(--navbarText);
+    font-weight: bolder;
+    text-decoration: none;
+}
+nav ul {
+    display: block;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    min-width: 300px;
+}  
+nav ul li {
+    align-items: center;
+    padding: 8px;
+}
+#pagetitle {
+    color: var(--navbarText);
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    font-weight: 900;
+    left: 65px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0px;
+}
+#pagetitle:hover {
+    color: var(--navbarText);
+    font-weight: bolder;
+    text-decoration: none;
+}
