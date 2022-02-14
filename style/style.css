@@ -1,7 +1,7 @@
 /* Page Elements */
 :root {
     --navbarBkgd: white;
-    --navbarText: #4361ee;
+    --navbarText: #0376F2;
     --pageBkgd: white;
     --pageText: #3a0ca3;
 }
@@ -86,6 +86,10 @@ body {
     top: 50%;
     width: 500px;
 }
+/* .custom-homepgbtn:hover {
+    -webkit-animation: infinite-spinning 5s ease-out 0s infinite normal;
+    animation: infinite-spinning 5s ease-out 0s infinite normal;
+} */
 .custom-homepgbtn a {
     color: white;
     text-decoration: none;
@@ -98,6 +102,10 @@ body {
 .custom-iconhome {
     font-size: 200px;
 }
+/* .custom-iconhome:hover {
+    -webkit-animation: infinite-spinning 3s ease-out 0s infinite normal;
+    animation: infinite-spinning 3s ease-out 0s infinite normal;
+} */
 /* Nav Elements */
 #dccomicslogo {
     height: 50px;
