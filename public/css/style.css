@@ -106,6 +106,7 @@ body {
     -webkit-animation: infinite-spinning 3s ease-out 0s infinite normal;
     animation: infinite-spinning 3s ease-out 0s infinite normal;
 } */
+
 /* Nav Elements */
 #dccomicslogo {
     height: 50px;
@@ -152,4 +153,32 @@ nav ul li {
     color: var(--navbarText);
     font-weight: bolder;
     text-decoration: none;
+}
+
+/* Login Page */
+#page_login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+}
+#page_login form {
+    padding: 20px;
+}
+#page_logincontent {
+    align-items: center;
+    background-color: white;
+    border: hidden;
+    border-radius: 5%;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    width: 500px;
+}
+#login-new,
+#login-old {
+    padding-bottom: 50px;
 }
