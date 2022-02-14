@@ -15,7 +15,7 @@
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- Custom Styling -->
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <!-- Website Title -->
     <title>ComicStans | Track Your Comic Collection</title>
     <script src='server.js'></script>
@@ -47,16 +47,18 @@
     <div><img id="mascot_danc" src="./stanlee-danc editbyDavid.png"></div>
 
     <!-- Homepage Collection Buttons -->
-    <ul class="container custom-container1" id="homepage_collbuttons">
+    <div>
+        <ul class="container custom-container1" id="homepage_collbuttons">
         <!-- #Logpage_newcoll is meant to load the Profile: My Collection page after the user logs in -->
-        <li><button class="custom-homepgbtn"><a href="#Logpage_newcoll">
-            <p><i class="fas fa-books-medical custom-iconhome"></i></p>
-            <p>Start Your Collection</p></a></button></li>
+            <li><button class="custom-homepgbtn"><a href="#Logpage_newcoll">
+                <p><i class="fas fa-books-medical custom-iconhome"></i></p>
+                <p>Start Your Collection</p></a></button></li>
         <!-- #Logpage_viewcoll is meant to load the Explore: Find Your League page after the user logs in -->
-        <li><button class="custom-homepgbtn"><a href="#Logpage_viewcoll">
-            <p><i class="fa-solid fa-book-open-reader custom-iconhome"></i></p>
-            <p>View Collections</p></a></button></li>
-    </ul>
+            <li><button class="custom-homepgbtn"><a href="#Logpage_viewcoll">
+                <p><i class="fa-solid fa-book-open-reader custom-iconhome"></i></p>
+                <p>View Collections</p></a></button></li>
+        </ul>
+    </div>
 
     <!-- Footer -->
     <footer class="custom-footer">
