@@ -1,32 +1,42 @@
-<div id="page_login">
-<section id="page_logincontent">
-  <form id="login-new" action="action_page.php">
-    <h2>New visitor?</h2>
-    <h4>Sign up to keep track of your very own collection and compare it to other users.</h4>
-    <label for="email"><b>Email:</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-    <br><label for="psw"><b>Password:</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-    <br><label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me?</label>
-    <br><p>By creating an account you agree to our <a href="#" style="text-decoration: underline">Terms of Service</a>.</p>
-    <div class="clearfix">
-      <button type="submit" class="signupbtn">Sign Up</button>
-    </div>
-  </form>
-
-  <form id="login-old" action="action_page.php">
-    <h2>Returning collector?</h2>
-      <h4>Log in to make changes to your collection and view other collections at your leisure.</h4>
+<div class="page_container">
+  <section class="page_content" id="logincontent">
+    {{!-- Sign Up --}}
+    <form class="form-group" id="login-new" action="action_page.php">
+      <h2>New visitor?</h2>
+        <h4>Sign up to keep track of your very own collection and compare it to other users.</h4>
+      
       <label for="email"><b>Email:</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <input type="email" placeholder="Enter Email" name="email" required>
+      
       <br><label for="psw"><b>Password:</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
-      <br><label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me?</label>
-      <div class="clearfix">
-        <button type="button" class="signinbtn">Sign In</button>
-      </div>
-  </form>
-</section>
+      
+      <br><label class="form-check-label"> Remember Me?</label>
+        <input class="form-check-input" type="checkbox" checked="checked" name="remember" style="margin-left: 10px;">
+
+      <br><p>By creating an account you agree to our <a href="#" style="text-decoration: underline">Terms of Service</a>.</p>
+      
+      <button class="btn btn-primary" type="submit">Sign Up</button>
+    
+    </form>
+
+    {{!-- Sign In --}}
+    <form class="form-group" id="login-old" action="action_page.php">
+      <h2>Returning collector?</h2>
+        <h4>Log in to make changes to your collection and view other collections at your leisure.</h4>
+
+      <label for="email"><b>Email:</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+      
+      <br><label for="psw"><b>Password:</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      
+      <br><label class="form-check-label"> Remember Me?</label>
+        <input class="form-check-input" type="checkbox" checked="checked" name="remember" style="margin-left: 10px;">
+        
+      <br><button class="btn btn-primary" type="submit">Sign In</button>
+      
+    </form>
+  </section>
 </div>
+<script src="./js/login.js"></script>
