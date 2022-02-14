@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const userRoutes = require('./userRoutes');
-const comicsRoutes = require('./projectRoutes');
+const collectionsRoutes = require('./collectionsRoutes');
 
 router.use('/users', userRoutes);
-router.use('/comics', comicsRoutes);
+router.use('/collections', collectionsRoutes);
+// router.use('/comics', comicsRoutes);
 
 module.exports = router;

@@ -3,49 +3,59 @@ const sequelize = require('../config/connection');
 
 class Comics extends Model {}
 
-Comics.inti(
+Comics.init(
     {
       category_title: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       issue_name: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       issue_link: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       pencilers: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       cover_artists: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       inkers: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       writers: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       editors: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       executive_editor: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       letterers: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       colourists: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       release_date: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
       comic_series: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        defaultValue: null,
       },
     },
     {
