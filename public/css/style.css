@@ -48,7 +48,7 @@ body {
 
 /* Homepage Images */
 .bkgdimg {
-    opacity: 30%;
+    opacity: 25%;
     z-index: -2;
     background-image: url("https://cdn.shopify.com/s/files/1/1140/8354/articles/Who_Owns_DC_Comics_2000x.jpg?v=1635267203");
     background-repeat: no-repeat;

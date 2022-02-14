@@ -29,6 +29,7 @@
             <li><a href="/" title="Return to Homepage"><div id="pagetitle">COMICStANS</div></a></li>
             <!-- Dynamic Navbar options -->
             {{#if logged_in}}
+
                 <li><a href="/">Home</a></li>
                 <li><a href="/profile">Profile</a></li>
                 <li><a href="/explore">Explore</a></li>
@@ -36,6 +37,15 @@
             {{else}}
                 <li><a href="/login" id="navloglink">Sign Up / Log In</a></li>
             {{/if}}
+
+            <li><a href="/">Home</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/explore">Explore</a></li>
+            <li><a href="/logout">Sign Out</a></li>
+        {{else}}
+            <li><a href="/login" id="navloglink">Sign Up / Log In</a></li>
+        {{/if}}
+
 
         </ul>
     </nav>
