@@ -2,6 +2,15 @@ const router = require('express').Router();
 const { Comics, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+
+router.get('/', async (req, res) => {
+  try {
+    res.render('homepage',);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+})
+
 router.get('/allcomics', async (req, res) => {
   try {
     // Get all comics and JOIN with user data
