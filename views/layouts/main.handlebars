@@ -22,22 +22,20 @@
 
 <body>
     <nav>
-    <!-- Navbar MAKE DYNAMIC! -->
         <ul class="navbar">
+            <!-- DC Logo | Clicking here sends the user to DCcomics' homepage -->
             <img id="dccomicslogo" src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
-            <!-- Clicking here returns the user to the homepage -->
+            <!-- Page Logo | Clicking here returns the user to the homepage -->
             <li><a href="/" title="Return to Homepage"><div id="pagetitle">COMICStANS</div></a></li>
-            <!-- Clicking here loads the Sign Up / Log In page | this link is replaced with the additional options once the user signs in-->
-            
-            <!-- Additional Nav Options, dynamically load after signing in -->
+            <!-- Dynamic Navbar options -->
             {{#if logged_in}}
-            <li><a href="/">Home</a></li>
-            <li><a href="/profile">Profile</a></li>
-            <li><a href="/explore">Explore</a></li>
-            <li><a href="#SignOut">Sign Out</a></li>
-        {{else}}
-            <li><a href="/login" id="navloglink">Sign Up / Log In</a></li>
-        {{/if}}
+                <li><a href="/">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/explore">Explore</a></li>
+                <li><a href="#signout">Sign Out</a></li>
+            {{else}}
+                <li><a href="/login" id="navloglink">Sign Up / Log In</a></li>
+            {{/if}}
 
         </ul>
     </nav>
