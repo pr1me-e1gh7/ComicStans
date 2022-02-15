@@ -3,17 +3,85 @@
     --navbarBkgd: white;
     --navbarText: #0376F2;
     --pageBkgd: white;
-    --pageText: #3a0ca3;
+    /* --pageText: #3a0ca3; */
 }
 body {
     background-color: black;
-    color: var(--pageText);
     font-family: 'Bangers', cursive;
     font-size: 150%;
     list-style-type: none;
     opacity: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+/* Footer */
+.custom-footer {
+    bottom: 5px;
+    color: white;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+.custom-footer a {
+    color: white;
+    text-decoration: none;
+}
+.custom-footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+.custom-iconfooter:hover {
+    -webkit-animation: infinite-spinning 1s ease-out 0s infinite normal;
+    animation: infinite-spinning 1s ease-out 0s infinite normal;
+}
+@keyframes infinite-spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/* Homepage buttons */
+.custom-homepgbtn {
+    border: white 20px solid;
+    background: none;
+    border-radius: 100%;
+    height: 500px;
+    margin: 20px;
+    margin-top: 15vh;
+    top: 50%;
+    width: 500px;
+}
+.custom-homepgbtn a {
+    color: white;
+    text-decoration: none;
+}
+.custom-homepgbtn a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.custom-iconhome {
+    font-size: 200px;
+}
+#homepagebuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    list-style-type: none;
+}
+
+/* Login page */
+#login-new {
+    padding-bottom: 20px;
+}
+#login-old {
+    padding-bottom: 10px;
 }
 
 /* Nav elements */
@@ -68,36 +136,6 @@ nav ul li {
     font-weight: bolder;
     text-decoration: none;
 }
-
-/* Footer */
-.custom-footer {
-    bottom: 5px;
-    color: white;
-    left: 50%;
-    position: absolute;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
-}
-.custom-footer a {
-    color: white;
-    text-decoration: none;
-}
-.custom-footer a:hover {
-    color: white;
-    text-decoration: none;
-}
-.custom-iconfooter:hover {
-    -webkit-animation: infinite-spinning 1s ease-out 0s infinite normal;
-    animation: infinite-spinning 1s ease-out 0s infinite normal;
-}
-@keyframes infinite-spinning {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
 
 /* Page content */
 .bkgdimg {
@@ -170,43 +208,4 @@ nav ul li {
 }
 #smallcontainer {
     width: 40vw;
-}
-
-/* Homepage buttons */
-.custom-homepgbtn {
-    border: white 20px solid;
-    background: none;
-    border-radius: 100%;
-    height: 500px;
-    margin: 20px;
-    margin-top: 15vh;
-    top: 50%;
-    width: 500px;
-}
-.custom-homepgbtn a {
-    color: white;
-    text-decoration: none;
-}
-.custom-homepgbtn a:hover {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-.custom-iconhome {
-    font-size: 200px;
-}
-#homepagebuttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    list-style-type: none;
-}
-
-/* Login page */
-#login-new {
-    padding-bottom: 20px;
-}
-#login-old {
-    padding-bottom: 10px;
 }
