@@ -6,13 +6,13 @@
         <h4>Sign up to keep track of your very own collection and compare it to other users.</h4>
 
       <label for="name"><b>Name:</b></label>
-        <input type="username" placeholder="Enter Name" name="name" required>
+        <input type="username" id='name-signup' placeholder="Enter Name" name="name" required>
 
       <br><label for="email"><b>Email:</b></label>
-        <input type="email" placeholder="Enter Email" name="email" required>
+        <input type="email"  id='email-signup' placeholder="Enter Email" name="email" required>
       
       <br><label for="psw"><b>Password:</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password"  id='password-signup' placeholder="Enter Password" name="psw" required>
       
       <br><label class="form-check-label"> Remember Me?</label>
         <input class="form-check-input" type="checkbox" checked="checked" name="remember" style="margin-left: 10px;">
@@ -29,10 +29,10 @@
         <h4>Log in to make changes to your collection and view other collections at your leisure.</h4>
 
       <label for="email"><b>Email:</b></label>
-        <input type="email" placeholder="Enter Email" name="email" required>
+         <input type="email" id="email-login" placeholder="Enter Email" name="email" required>
       
       <br><label for="psw"><b>Password:</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" id="password-login" placeholder="Enter Password" name="psw" required>
       
       <br><label class="form-check-label"> Remember Me?</label>
         <input class="form-check-input" type="checkbox" checked="checked" name="remember" style="margin-left: 10px;">
@@ -42,4 +42,5 @@
     </form>
   </section>
 </div>
-<script src="../public/js/login.js"></script>
+
+<script src="/js/login.js"></script>
