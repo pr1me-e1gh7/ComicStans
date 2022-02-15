@@ -1,12 +1,12 @@
 <div class="page_container">
   <section class="page_content" id="smallcontainer">
     {{!-- Sign Up --}}
-    <form class="form-group" id="login-new" action="action_page.php">
+    <form class="form signup-form" id="login-new" >
       <h2>New visitor?</h2>
         <h4>Sign up to keep track of your very own collection and compare it to other users.</h4>
 
       <label for="name"><b>Name:</b></label>
-        <input type="name" placeholder="Enter Name" name="name" required>
+        <input type="username" placeholder="Enter Name" name="name" required>
 
       <br><label for="email"><b>Email:</b></label>
         <input type="email" placeholder="Enter Email" name="email" required>
@@ -24,7 +24,7 @@
     </form>
 
     {{!-- Sign In --}}
-    <form class="form-group" id="login-old" action="action_page.php">
+    <form class="form login-form" id="login-old" >
       <h2>Returning collector?</h2>
         <h4>Log in to make changes to your collection and view other collections at your leisure.</h4>
 
@@ -42,4 +42,4 @@
     </form>
   </section>
 </div>
-<script src="./js/login.js"></script>
+<script src="../public/js/login.js"></script>
