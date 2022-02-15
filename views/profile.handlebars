@@ -1,0 +1,67 @@
+<div class="page_container">
+    <section class="page_content" id="largecontainer">
+        {{#if logged_in}}
+        {{!-- Dynamic username --}}
+        <h2>Welcome, "name"!</h2>
+        {{!-- Side Menu --}}
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">My Collection</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="/favorites">Favorites</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="/wishlist">Wishlist</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profile-edit">Edit Profile</a></li>
+        </ul>
+
+        {{!-- Loads the user's collection --}}
+        <h3>Checkout your collection</h3>
+        <ul class="profile-list">
+            <li class="list-item">
+                <div class="issue_name">"{{issue_name}}"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"{{release_date}}"</li>
+                    <li class="writers">"{{writers}}"</li>
+                    <li class="comic_series">"{{comic_series}}"</li>
+                </ul></li>
+            <li class="list-item">
+                <div class="issue_name">"{{issue_name}}"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"{{release_date}}"</li>
+                    <li class="writers">"{{writers}}"</li>
+                    <li class="comic_series">"{{comic_series}}"</li>
+                </ul></li>
+            <li class="list-item">
+                <div class="issue_name">"{{issue_name}}"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"{{release_date}}"</li>
+                    <li class="writers">"{{writers}}"</li>
+                    <li class="comic_series">"{{comic_series}}"</li>
+                </ul></li>
+            <li class="list-item">
+                <div class="issue_name">"{{issue_name}}"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"{{release_date}}"</li>
+                    <li class="writers">"{{writers}}"</li>
+                    <li class="comic_series">"{{comic_series}}"</li>
+                </ul></li>
+            <li class="list-item">
+                <div class="issue_name">"{{issue_name}}"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"{{release_date}}"</li>
+                    <li class="writers">"{{writers}}"</li>
+                    <li class="comic_series">"{{comic_series}}"</li>
+                </ul></li>
+        </ul>
+        {{!-- Show More | Loads 5 more users --}}
+        <button class="btn btn-secondary" type="button">Show 5 More</button>
+        
+        {{else}}
+        <article>
+            <h2>WOH there, believers!</h2>
+            <h4>You must first <a href="/login">login or signup</a> before viewing this page</h4>
+        </article>
+        {{/if}}
+    </section>
+</div>

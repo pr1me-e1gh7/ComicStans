@@ -120,6 +120,9 @@ nav ul li {
 #largecontainer {
     width: 90vw;
 }
+.list-item {
+    border: solid 2px black;
+}
 #mascot_danc {
     position: absolute;
     bottom: 0px;
@@ -193,9 +196,6 @@ nav ul li {
 }
 
 /* Explore - Find Your League page */
-.league-list {
-    border: solid 2px black;
-}
 .league-userinfo {
     flex-direction: column;
     float: inline-end;
@@ -212,3 +212,5 @@ nav ul li {
 .issue_name {
     float: inline-start;   
 }
+
+/* Profile - Collection page */
