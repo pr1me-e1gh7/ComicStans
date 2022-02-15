@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico">
+    <link rel="shortcut icon" type="image/jpg" href="/images/powcomic.ico">
     <!-- Google Font - Alfa Slab & Bangers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,23 +29,13 @@
             <li><a href="/" title="Return to Homepage"><div id="pagetitle">COMICStANS</div></a></li>
             <!-- Dynamic Navbar options -->
             {{#if logged_in}}
-
                 <li><a href="/">Home</a></li>
                 <li><a href="/profile">Profile</a></li>
                 <li><a href="/explore">Explore</a></li>
-                <li><a href="#signout">Sign Out</a></li>
+                <li><a href="#logout">Sign Out</a></li>
             {{else}}
                 <li><a href="/login" id="navloglink">Sign Up / Log In</a></li>
             {{/if}}
-
-            <li><a href="/">Home</a></li>
-            <li><a href="/profile">Profile</a></li>
-            <li><a href="/explore">Explore</a></li>
-            <li><a href="/logout">Sign Out</a></li>
-        {{else}}
-            <li><a href="/login" id="navloglink">Sign Up / Log In</a></li>
-        {{/if}}
-
 
         </ul>
     </nav>
@@ -56,19 +46,19 @@
     <!-- Dan C Mascot -->
     <div><img id="mascot_danc" src="/images/stanlee-danc editbyDavid.png"></div>
 
-    <main>
+    <main class="content">
         {{{ body }}}
     </main>
 
     <!-- Footer -->
     <footer class="custom-footer">
-        <h4><a href="https://github.com/pr1me-e1gh7/ComicStans" title="Checkout the Repo"><i class="fa-brands fa-github custom-iconfooter"></i></a> Checkout the Developers 
+        <h4><a href="https://github.com/pr1me-e1gh7/ComicStans" title="Checkout the Repo" target="_blank"><i class="fa-brands fa-github custom-iconfooter"></i></a> Checkout the Developers 
         <!-- Our Github profiles, by alphabetical order -->
-            <a href="https://github.com/pr1me-e1gh7" title="David Caro"><i class="fa-solid fa-circle-1 custom-iconfooter"></i></a>
-            <a href="https://github.com/thiagorodrigues3" title="Thiago Rodrigues"><i class="fa-solid fa-circle-2 custom-iconfooter"></i></a>
-            <a href="https://github.com/mwright0481" title="Mike Wright"><i class="fa-solid fa-circle-3 custom-iconfooter"></i></a>
-            <a href="https://github.com/chrisy272" title="Paul Young"><i class="fa-solid fa-circle-4 custom-iconfooter"></i></a></h4>
-        <p><h4>Copyright <i class="far fa-copyright"></i> 2022</h5>
+            <a href="https://github.com/pr1me-e1gh7" title="David Caro" target="_blank"><i class="fa-solid fa-circle-1 custom-iconfooter"></i></a>
+            <a href="https://github.com/thiagorodrigues3" title="Thiago Rodrigues" target="_blank"><i class="fa-solid fa-circle-2 custom-iconfooter"></i></a>
+            <a href="https://github.com/mwright0481" title="Mike Wright" target="_blank"><i class="fa-solid fa-circle-3 custom-iconfooter"></i></a>
+            <a href="https://github.com/chrisy272" title="Paul Young" target="_blank"><i class="fa-solid fa-circle-4 custom-iconfooter"></i> </a>
+        Copyright <i class="far fa-copyright"></i> 2022 </h4>
     </footer>
     
 <!-- Bootstrap JS -->

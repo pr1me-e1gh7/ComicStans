@@ -1,4 +1,4 @@
-/* Page Elements */
+/* Page elements */
 :root {
     --navbarBkgd: white;
     --navbarText: #0376F2;
@@ -13,100 +13,10 @@ body {
     list-style-type: none;
     opacity: 100%;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
-/* Footer */
-.custom-footer {
-    align-items: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: 50px;
-}
-.custom-footer a {
-    color: white;
-    text-decoration: none;
-}
-.custom-footer a:hover {
-    color: white;
-    text-decoration: none;
-}
-.custom-iconfooter:hover {
-    -webkit-animation: infinite-spinning 1s ease-out 0s infinite normal;
-    animation: infinite-spinning 1s ease-out 0s infinite normal;
-}
-@keyframes infinite-spinning {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-/* Homepage Images */
-.bkgdimg {
-    opacity: 25%;
-    z-index: -2;
-    background-image: url("https://cdn.shopify.com/s/files/1/1140/8354/articles/Who_Owns_DC_Comics_2000x.jpg?v=1635267203");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top:0px;
-    left:0px;
-    width: 100%;
-    height: 100%;
-}
-#mascot_danc {
-    position: absolute;
-    bottom: 0px;
-    height: 40%;
-    width: auto;
-    z-index: -1;
-}
-
-/* Homepage Buttons */
-#homepage_collbuttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    list-style-type: none;
-}
-.custom-homepgbtn {
-    border: white 20px solid;
-    background: none;
-    border-radius: 100%;
-    height: 500px;
-    margin: 20px;
-    margin-top: 30%;
-    top: 50%;
-    width: 500px;
-}
-/* .custom-homepgbtn:hover {
-    -webkit-animation: infinite-spinning 5s ease-out 0s infinite normal;
-    animation: infinite-spinning 5s ease-out 0s infinite normal;
-} */
-.custom-homepgbtn a {
-    color: white;
-    text-decoration: none;
-}
-.custom-homepgbtn a:hover {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-.custom-iconhome {
-    font-size: 200px;
-}
-/* .custom-iconhome:hover {
-    -webkit-animation: infinite-spinning 3s ease-out 0s infinite normal;
-    animation: infinite-spinning 3s ease-out 0s infinite normal;
-} */
-/* Nav Elements */
+/* Nav elements */
 #dccomicslogo {
     height: 50px;
     left: 10px;
@@ -114,13 +24,18 @@ body {
     top: 10px;
     width: auto;
 }
-.navbar {
-    font-family: 'Bangers', cursive;
-    justify-content: flex-end;
-    background-color: var(--navbarBkgd);
-}
 nav a {
     color: var(--navbarText);
+}
+.navbar {
+    background-color: var(--navbarBkgd);
+    font-family: 'Bangers', cursive;
+    min-height: 7.5vh;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 #navloglink:hover {
     color: var(--navbarText);
@@ -153,6 +68,147 @@ nav ul li {
     font-weight: bolder;
     text-decoration: none;
 }
-.form-signup-form{
-  
+
+/* Footer */
+.custom-footer {
+    bottom: 5px;
+    color: white;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+.custom-footer a {
+    color: white;
+    text-decoration: none;
+}
+.custom-footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+.custom-iconfooter:hover {
+    -webkit-animation: infinite-spinning 1s ease-out 0s infinite normal;
+    animation: infinite-spinning 1s ease-out 0s infinite normal;
+}
+@keyframes infinite-spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/* Page content */
+.bkgdimg {
+    opacity: 25%;
+    z-index: -2;
+    background-attachment: fixed;
+    background-image: url("https://cdn.shopify.com/s/files/1/1140/8354/articles/Who_Owns_DC_Comics_2000x.jpg?v=1635267203");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    padding-top: 80px;
+}
+#largecontainer {
+    width: 90vw;
+}
+#mascot_danc {
+    position: absolute;
+    bottom: 0px;
+    height: 40%;
+    width: auto;
+    z-index: 2;
+}
+.page_container {
+    align-content: center;
+    border: hidden;
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    width: auto;
+}
+.page_content {
+    align-items: center;
+    background-color: white;
+    border: hidden;
+    border-radius: 5%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Adds scroll to keep content in box */
+    overflow-y: auto;
+    padding: 20px;
+}
+#smallcontainer {
+    width: 40vw;
+}
+
+/* Homepage buttons */
+.custom-homepgbtn {
+    border: white 20px solid;
+    background: none;
+    border-radius: 100%;
+    height: 500px;
+    margin: 20px;
+    margin-top: 30%;
+    top: 50%;
+    width: 500px;
+}
+.custom-homepgbtn a {
+    color: white;
+    text-decoration: none;
+}
+.custom-homepgbtn a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.custom-iconhome {
+    font-size: 200px;
+}
+#homepagebuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    list-style-type: none;
+}
+
+/* Login page */
+#login-new {
+    padding-bottom: 20px;
+}
+#login-old {
+    padding-bottom: 10px;
+}
+
+/* Explore - Find Your League page */
+.league-list {
+    border: solid 2px black;
+}
+.league-userinfo {
+    flex-direction: column;
+    float: inline-end;
+    font-size: 50%;
+}
+.league-username {
+    float: inline-start;
+}
+
+/* Explore - Find Adventure page*/
+.comic-info {
+    float: inline-end;
+}
+.issue_name {
+    float: inline-start;   
 }

@@ -1,0 +1,65 @@
+<div class="page_container">
+    <section class="page_content" id="largecontainer">
+        {{#if logged_in}}
+        {{!-- Dynamic username --}}
+        <h2>Collect the universe, "name"</h2>
+        {{!-- Side Menu --}}
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="/explore">Find Your League</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Find Adventure</a></li>
+            {{!-- <li class="nav-item">
+                <a class="nav-link" href="#searchuser">Search by User</a></li> --}}
+        </ul>
+        {{!-- A list of users with at least one shared title in their collection --}}
+        <h3>Find something new</h3>
+        <ul class="explore-list">
+            {{!-- FIGURE OUT HOW TO ADD +COLLECTION and +WISHLIST BUTTONS --}}
+            <li class="league-list">
+                <div class="issue_name">"issue_name"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"release_date"</li>
+                    <li class="writers">"writers"</li>
+                    <li class="comic_series">"comic_series"</li>
+                </ul></li>
+            <li class="league-list">
+                <div class="issue_name">"issue_name"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"release_date"</li>
+                    <li class="writers">"writers"</li>
+                    <li class="comic_series">"comic_series"</li>
+                </ul></li>
+            <li class="league-list">
+                <div class="issue_name">"issue_name"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"release_date"</li>
+                    <li class="writers">"writers"</li>
+                    <li class="comic_series">"comic_series"</li>
+                </ul></li>
+            <li class="league-list">
+                <div class="issue_name">"issue_name"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"release_date"</li>
+                    <li class="writers">"writers"</li>
+                    <li class="comic_series">"comic_series"</li>
+                </ul></li>
+            <li class="league-list">
+                <div class="issue_name">"issue_name"</div>
+                <ul class="comic-info">
+                    <li class="release_date">"release_date"</li>
+                    <li class="writers">"writers"</li>
+                    <li class="comic_series">"comic_series"</li>
+                </ul></li>
+        </ul>
+        {{!-- Show More | Loads 5 more users --}}
+        <button class="btn btn-secondary" type="button">Show 5 More</button>
+        
+        {{else}}
+        <article>
+            <h2>WOH there, believers!</h2>
+            <h4>You must first <a href="/login">login or signup</a> before viewing this page</h4>
+        </article>
+        {{/if}}
+    </section>
+</div>
