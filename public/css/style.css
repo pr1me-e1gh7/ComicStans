@@ -114,14 +114,29 @@ nav ul li {
     width: 100%;
     height: 100%;
 }
+.comic-info,
+.league-userinfo {
+    flex-direction: column;
+    float: right;
+    font-size: 80%;
+    list-style-type: none;
+}
 .content {
     padding-top: 80px;
+}
+.issue_name,
+.league-username {
+    float: left;
 }
 #largecontainer {
     width: 90vw;
 }
 .list-item {
     border: solid 2px black;
+    justify-content: center;
+    height: 10vh;
+    list-style-type: none;
+    width: 40vw;
 }
 #mascot_danc {
     position: absolute;
@@ -149,6 +164,7 @@ nav ul li {
     flex-wrap: wrap;
     justify-content: center;
     /* Adds scroll to keep content in box */
+    overflow-x: auto;
     overflow-y: auto;
     padding: 20px;
 }
@@ -194,23 +210,3 @@ nav ul li {
 #login-old {
     padding-bottom: 10px;
 }
-
-/* Explore - Find Your League page */
-.league-userinfo {
-    flex-direction: column;
-    float: inline-end;
-    font-size: 50%;
-}
-.league-username {
-    float: inline-start;
-}
-
-/* Explore - Find Adventure page*/
-.comic-info {
-    float: inline-end;
-}
-.issue_name {
-    float: inline-start;   
-}
-
-/* Profile - Collection page */
