@@ -24,6 +24,9 @@ body {
     top: 10px;
     width: auto;
 }
+nav a {
+    color: var(--navbarText);
+}
 .navbar {
     background-color: var(--navbarBkgd);
     font-family: 'Bangers', cursive;
@@ -33,9 +36,6 @@ body {
     top: 0;
     width: 100%;
     z-index: 100;
-}
-nav a {
-    color: var(--navbarText);
 }
 #navloglink:hover {
     color: var(--navbarText);
@@ -120,6 +120,13 @@ nav ul li {
 #largecontainer {
     width: 90vw;
 }
+#mascot_danc {
+    position: absolute;
+    bottom: 0px;
+    height: 40%;
+    width: auto;
+    z-index: 2;
+}
 .page_container {
     align-content: center;
     border: hidden;
@@ -142,25 +149,11 @@ nav ul li {
     overflow-y: auto;
     padding: 20px;
 }
-#mascot_danc {
-    position: absolute;
-    bottom: 0px;
-    height: 40%;
-    width: auto;
-    z-index: 2;
-}
 #smallcontainer {
     width: 40vw;
 }
 
 /* Homepage buttons */
-#homepagebuttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    list-style-type: none;
-}
 .custom-homepgbtn {
     border: white 20px solid;
     background: none;
@@ -182,6 +175,13 @@ nav ul li {
 }
 .custom-iconhome {
     font-size: 200px;
+}
+#homepagebuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    list-style-type: none;
 }
 
 /* Login page */
